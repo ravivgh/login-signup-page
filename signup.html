@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login Page</title>
+	</head>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0 auto;
+			padding: 0;
+			font-family: "inter", sans-serif;
+		}
+		body {
+			background: rgb(224, 224, 224);
+		}
+		.conten {
+			width: 500px;
+			height: 500px;
+			border-radius: 40px;
+			background: black;
+			margin-top: 200px;
+			box-shadow: -5px 0 8px 2px rgba(90, 90, 90, 0.253);
+		}
+		.text1 {
+			color: rgb(255, 255, 255);
+			text-align: center;
+			padding-top: 8%;
+		}
+		.men {
+			padding: 5%;
+			margin: 15px;
+			text-align: center;
+			cursor: pointer;
+		}
+		.men :hover {
+			background: rgba(255, 255, 255, 0.26);
+			box-shadow: none;
+			transition: 0.5s;
+		}
+		.img {
+			border-radius: 40px;
+			background: rgba(230, 230, 230, 0.089);
+			padding: 3%;
+			box-shadow: -5px 0 8px 2px rgba(196, 196, 196, 0.027);
+		}
+		.img2 {
+			border-radius: 40px;
+			background: rgba(230, 230, 230, 0.089);
+			padding: 3%;
+			box-shadow: -5px 0 8px 2px rgba(196, 196, 196, 0.027);
+			margin: 3px;
+		}
+
+		.id {
+			padding: 6%;
+			text-align: center;
+			cursor: pointer;
+		}
+		.ename {
+			padding: 6%;
+			border-radius: 40px;
+			background: rgb(255, 255, 255);
+			text-align: center;
+			padding: 1%;
+			box-shadow: -5px 0 8px 2px rgba(240, 238, 238, 0.027);
+			justify-content: center;
+			margin: 7px;
+		}
+		.ename input {
+			width: 300px;
+			border: 0;
+			outline: none;
+			background: transparent;
+			color: rgb(112, 112, 112);
+			font-family: "inter", sans-serif;
+			font-size: 15px;
+			padding: 3%;
+		}
+		.nex {
+			padding: 6%;
+			border-radius: 40px;
+			background: darkgray;
+			padding: 3%;
+			box-shadow: -5px 0 8px 2px rgba(196, 196, 196, 0.027);
+			margin: 7px;
+			cursor: pointer;
+			font-family: "inter", sans-serif;
+		}
+		.nex button {
+			background: transparent;
+			border: 0;
+			color: white;
+		}
+		.id2 :hover {
+			background: rgba(169, 169, 169, 0.815);
+			box-shadow: none;
+			transition: 0.5s;
+		}
+
+		.orl {
+			width: 50%;
+			color: white;
+			text-align: center;
+			padding-top: 13px;
+			font-family: "inter", sans-serif;
+		}
+		@media screen and (max-width: 600px) {
+			.conten {
+				width: 300px;
+				height: 300px;
+				border-radius: 40px;
+				background: black;
+				margin-top: 200px;
+				box-shadow: -5px 0 8px 2px rgba(90, 90, 90, 0.253);
+			}
+			.text1 {
+				color: rgb(255, 255, 255);
+				text-align: center;
+				padding-top: 8%;
+				font-size: 50%;
+			}
+			.men {
+				padding: 5%;
+				margin: 15px;
+				text-align: center;
+				cursor: pointer;
+			}
+			.men :hover {
+				background: rgba(255, 255, 255, 0.26);
+				box-shadow: none;
+				transition: 0.5s;
+			}
+			.img {
+				border-radius: 40px;
+				background: rgba(230, 230, 230, 0.089);
+				padding: 3%;
+				box-shadow: -5px 0 8px 2px rgba(196, 196, 196, 0.027);
+			}
+			.img2 {
+				border-radius: 40px;
+				background: rgba(230, 230, 230, 0.089);
+				padding: 3%;
+				box-shadow: -5px 0 8px 2px rgba(196, 196, 196, 0.027);
+				margin: 3px;
+			}
+			.id {
+				padding: 5%;
+				text-align: center;
+				cursor: pointer;
+			}
+			.ename {
+				padding: 6%;
+				border-radius: 40px;
+				background: rgb(255, 255, 255);
+				text-align: center;
+				padding: 1%;
+				box-shadow: -5px 0 8px 2px rgba(240, 238, 238, 0.027);
+				justify-content: center;
+			}
+			.ename input {
+				width: 200px;
+				border: 0;
+				outline: none;
+				background: transparent;
+				color: rgb(112, 112, 112);
+				font-family: "inter", sans-serif;
+				font-size: 10px;
+				padding: 3%;
+			}
+			.nex {
+				padding: 6%;
+				border-radius: 40px;
+				background: darkgray;
+				padding: 3%;
+				box-shadow: -5px 0 8px 2px rgba(196, 196, 196, 0.027);
+				cursor: pointer;
+				font-family: "inter", sans-serif;
+			}
+			.nex button {
+				border: 0;
+				color: white;
+				font-size: 60%;
+			}
+			button {
+				background: transparent;
+				outline: none;
+			}
+			.orl {
+				width: 50%;
+				color: white;
+				text-align: center;
+				font-size: 50%;
+				padding-top: 1px;
+				font-family: "inter", sans-serif;
+			}
+		}
+	</style>
+	<body>
+		<div class="conten">
+			<div class="text1"><h1>SignUp</h1></div>
+			<div class="men">
+				<div class="img">
+					<img src="images/apple-logo.png" width="5%" />
+				</div>
+				<div class="img2">
+					<img src="images/google-logo.png" width="5%" />
+				</div>
+			</div>
+			<div class="orl">
+				<hr />
+				OR
+			</div>
+			<div class="id">
+				<div class="ename">
+					<input type="ename" placeholder="Enter Username" />
+				</div>
+				<div class="id2">
+					<div class="nex">
+						<button>Next</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
